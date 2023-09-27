@@ -1,4 +1,4 @@
-package linked_hash_map;
+package collections.linked_hash_map;
 
 import java.util.*;
 
