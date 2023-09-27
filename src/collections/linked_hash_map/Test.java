@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        Map<Person, Integer> personMap = new HashMap();
+        Map<Person, Integer> personMap = new HashMap<>();
         Person first = new Person(1, "Ivan");
         Person second = new Person(1, "Ivan");
         System.out.println(first.hashCode());
