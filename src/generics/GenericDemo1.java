@@ -4,6 +4,8 @@ package generics;
 public class GenericDemo1 {
     public static void main(String[] args) {
         String[] strings = {"One", "Two", "Three"};
+
+
         printArrayAnyTypes(strings);
 
         System.out.println("*************");

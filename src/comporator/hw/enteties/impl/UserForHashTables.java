@@ -1,8 +1,11 @@
-package comporator_comparable.hw.enteties.impl;
+package comporator.hw.enteties.impl;
 
-import comporator_comparable.hw.enteties.User;
+import comporator.hw.enteties.User;
 
-public class DefaultUser implements User {
+import java.util.Objects;
+
+
+public class UserForHashTables implements User {
 	
 	private static int userCounter = 0;
 	
@@ -16,17 +19,17 @@ public class DefaultUser implements User {
 		id = ++userCounter;
 	}
 	
-	public DefaultUser() {
+	public UserForHashTables() {
 	}
 	
-	public DefaultUser(String firstName, String lastName, String password, String email) {
+	public UserForHashTables(String firstName, String lastName, String password, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.password = password;
 		this.email = email;
 	}
 	
-	public DefaultUser(int id, String firstName, String lastName, String password, String email) {
+	public UserForHashTables(int id, String firstName, String lastName, String password, String email) {
 		this.id = id;
 		userCounter--; // to keep sequantial id
 		this.firstName = firstName;
@@ -87,4 +90,26 @@ public class DefaultUser implements User {
 	void clearState() {
 		userCounter = 0;
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(email, firstName, id, lastName, password);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		UserForHashTables other = (UserForHashTables) obj;
+		return Objects.equals(email, other.email)
+				&& Objects.equals(firstName, other.firstName) && Objects.equals(id, other.id)
+				&& Objects.equals(lastName, other.lastName)
+				&& Objects.equals(password, other.password);
+	}
+	
+	
 }

@@ -1,10 +1,9 @@
-package comporator_comparable.hw.enteties.impl;
+package comporator.hw.enteties.impl;
 
-import comporator_comparable.hw.enteties.Cart;
-import comporator_comparable.hw.enteties.Product;
+import comporator.hw.enteties.Cart;
+import comporator.hw.enteties.Product;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 

@@ -1,7 +1,7 @@
-package comporator_comparable.hw.services.impl;
+package comporator.hw.services.impl;
 
-import comporator_comparable.hw.enteties.Order;
-import comporator_comparable.hw.services.OrderManagementService;
+import comporator.hw.enteties.Order;
+import comporator.hw.services.OrderManagementService;
 
 import java.util.ArrayList;
 import java.util.List;
