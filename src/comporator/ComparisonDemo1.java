@@ -1,4 +1,4 @@
-package comporator_comparable;
+package comporator;
 
 import java.util.*;
 
@@ -39,7 +39,12 @@ public class ComparisonDemo1 {
         persons.add(p1);
         persons.add(p3);
         System.out.println("before sort: " + persons);
-        Collections.sort(persons);
+        Collections.sort(persons, new Comparator<Person>() {
+            @Override
+            public int compare(Person o1, Person o2) {
+                return o1.name.length() - o2.name.length();
+            }
+        });
         System.out.println("after sort: " + persons);
 
     }
@@ -59,7 +64,7 @@ class BackwardInteger implements Comparator<Integer> {
     }
 }
 
-class Person implements Comparable<Person> {
+ class Person implements Comparable<Person> {
     public int id;
     public String name;
 

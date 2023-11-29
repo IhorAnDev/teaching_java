@@ -1,5 +1,7 @@
 package generics;
 
+
+
 public class GenericDemo2 {
     public static void main(String[] args) {
         System.out.printf("Max of %d, %d and %d is %d\n\n", 1, 2, 3,
@@ -10,6 +12,7 @@ public class GenericDemo2 {
 
         System.out.printf("Max of %s, %s and %s is %s\n", "Audi",
                 "Acura", "Aston Martin", maxValue("Audi", "Acura", "Aston Martin"));
+
     }
 
     // Example of multiple bounds
@@ -29,3 +32,4 @@ public class GenericDemo2 {
         return max; // returns the largest object
     }
 }
+

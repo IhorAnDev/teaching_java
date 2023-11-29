@@ -1,6 +1,6 @@
-package comporator_comparable.hw.services;
+package comporator.hw.services;
 
-import comporator_comparable.hw.enteties.Order;
+import comporator.hw.enteties.Order;
 
 import java.util.List;
 

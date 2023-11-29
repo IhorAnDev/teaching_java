@@ -1,7 +1,7 @@
-package comporator_comparable.hw.services.impl;
+package comporator.hw.services.impl;
 
-import comporator_comparable.hw.enteties.User;
-import comporator_comparable.hw.services.UserManagementService;
+import comporator.hw.enteties.User;
+import comporator.hw.services.UserManagementService;
 
 import java.util.ArrayList;
 import java.util.List;

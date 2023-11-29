@@ -1,4 +1,4 @@
-package comporator_comparable.hw.enteties;
+package comporator.hw.enteties;
 
 import java.util.List;
 

@@ -1,18 +1,18 @@
-package comporator_comparable.hw.enteties.impl;
+package comporator.hw.enteties.impl;
 
-import comporator_comparable.hw.enteties.Product;
+import comporator.hw.enteties.Product;
 
-public class ComparableProduct implements Product, Comparable<Product> {
+public class DefaultProduct implements Product {
 	
 	private int id;
 	private String productName;
 	private String categoryName;
 	private double price;
 
-	public ComparableProduct() {
+	public DefaultProduct() {
 	}
 	
-	public ComparableProduct(int id, String productName, String categoryName, double price) {
+	public DefaultProduct(int id, String productName, String categoryName, double price) {
 		this.id = id;
 		this.productName = productName;
 		this.categoryName = categoryName;
@@ -34,7 +34,7 @@ public class ComparableProduct implements Product, Comparable<Product> {
 	public String getProductName() {
 		return this.productName;
 	}
-	
+
 	@Override
 	public String getCategoryName() {
 		return this.categoryName;
@@ -44,15 +44,10 @@ public class ComparableProduct implements Product, Comparable<Product> {
 	public double getPrice() {
 		return this.price;
 	}
-	
+
 	@Override
 	public void setPrice(double price) {
 		this.price = price;
 	}
 	
-	@Override
-	public int compareTo(Product otherProduct) {
-		return this.id - otherProduct.getId();
-	}
-
 }

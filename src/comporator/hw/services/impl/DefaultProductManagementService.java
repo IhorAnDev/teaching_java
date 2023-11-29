@@ -1,8 +1,8 @@
-package comporator_comparable.hw.services.impl;
+package comporator.hw.services.impl;
 
-import comporator_comparable.hw.enteties.Product;
-import comporator_comparable.hw.enteties.impl.DefaultProduct;
-import comporator_comparable.hw.services.ProductManagementService;
+import comporator.hw.enteties.Product;
+import comporator.hw.enteties.impl.DefaultProduct;
+import comporator.hw.services.ProductManagementService;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -9,6 +9,11 @@ public class Test {
         Person second = new Person(1, "Ivan");
         System.out.println(first.hashCode());
         System.out.println(second.hashCode());
+        Set<Integer> integers = new TreeSet<>();
+        integers.add(2);
+        integers.add(7);
+        integers.add(3);
+        System.out.println(integers);
     }
 }
 
